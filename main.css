@@ -4,5 +4,78 @@
 * { box-sizing: border-box; }
 
 body {
+    margin: 0;
     font-family: 'Roboto';
+    min-width: 320px;
+    color: rgba(255, 255, 255, 0.5);
+
+    display: grid;
+}
+
+h1, h2 {
+    font-family: 'Fjalla One';
+}
+
+/**** Hero Portrait ****/
+header.hero {
+    height: 100vh;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sg_Stubby.jpg/437px-Sg_Stubby.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    color: #D37520;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header.hero h1 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 6px 7px 2px 7px;
+    line-height: 1.1em;
+}
+
+header.hero p {
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4px 5px 3px 5px;
+    margin: 0;
+}
+
+header.hero p:before {
+    content: '\2605 ';
+}
+
+header.hero p:after {
+    content: ' \2605';
+}
+
+/**** Timeline Portrait ****/
+section.timeline {
+    background-color: #0E0B08;
+}
+
+section.timeline .date {
+    color: #D37520;
+}
+
+/**** Epilogue Portrait****/
+section.epilogue {
+    background-color: #bada55;
+    height: 100vh;
+}
+
+/**** Footer Portrait****/
+body > footer {
+    background-color: #110F0B;
 }
