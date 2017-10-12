@@ -12,18 +12,19 @@ body {
     display: grid;
 }
 
-h1, h2 {
+h1, h2, section.epilogue blockquote p {
     font-family: 'Fjalla One';
+}
+
+a {
+    /*text-decoration: none;*/
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /**** Hero Portrait ****/
 header.hero {
     height: 100vh;
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sg_Stubby.jpg/437px-Sg_Stubby.jpg');
+    background-image: url('images/hero-360x640-optimized-portrait.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ header.hero h1 {
 }
 
 header.hero p {
-    font-size: 13px;
+    font-size: 12px;
     padding: 4px 5px 3px 5px;
     margin: 0;
 }
@@ -124,12 +125,79 @@ section.timeline ul.events li.event div.happenings p {
 
 /**** Epilogue Portrait****/
 section.epilogue {
-    background-color: grey;
+    color: #D37520;
     height: 100vh;
-    background-image: url();
+    background-image: url('images/epilogue-360x640-optimized-portrait.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.epilogue blockquote {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 12.5vh;
+}
+
+section.epilogue blockquote > * {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.epilogue blockquote p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5em;
+    padding: 6px 7px 2px 7px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    width: auto;
+}
+
+section.epilogue blockquote p:before {
+    content: "\201C";
+}
+
+section.epilogue blockquote p:after {
+    content: "\201D";
+}
+
+section.epilogue blockquote footer {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 7px 3px 7px;
+}
+
+section.epilogue > footer {
+    margin-bottom: 2.5em;
+    padding: 2px 3px 2px 3px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+section.epilogue footer small a {
+    color: #D37520;
 }
 
 /**** Footer Portrait****/
 body > footer {
     background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+body > footer nav {
+    margin-bottom: 3px;
+}
+
+body > footer nav a {
+    font-size: 20px;
 }
