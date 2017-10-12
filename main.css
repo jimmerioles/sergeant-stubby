@@ -200,4 +200,9 @@ body > footer nav {
 
 body > footer nav a {
     font-size: 20px;
+    margin: 0 2px;
+}
+
+body > footer nav a:last-child {
+    margin: 0 4px;
 }
