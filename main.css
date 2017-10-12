@@ -176,7 +176,7 @@ section.epilogue blockquote footer {
 
 section.epilogue > footer {
     margin-bottom: 2.5em;
-    padding: 2px 3px 2px 3px;
+    padding: 0 3px 2px 3px;
     background-color: rgba(0, 0, 0, 0.85);
 }
 
