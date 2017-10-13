@@ -62,13 +62,6 @@ header.hero p:before {
 header.hero p:after {
     content: ' \2605';
 }
-/**** Hero Landscape ****/
-@media screen and (orientation: landscape) {
-    header.hero {
-        background-image: url('images/hero-16x9-landscape.jpg');
-    }
-}
-
 
 /**** Timeline Portrait ****/
 section.timeline {
@@ -190,12 +183,6 @@ section.epilogue > footer {
 section.epilogue footer small a {
     color: #D37520;
 }
-/**** Epilogue Landscape ****/
-@media screen and (orientation: landscape) {
-    section.epilogue {
-        background-image: url('images/epilogue-16x9-landscape.jpg');
-    }
-}
 
 /**** Footer Portrait****/
 body > footer {
@@ -218,4 +205,16 @@ body > footer nav a {
 
 body > footer nav a:last-child {
     margin: 0 4px;
+}
+
+@media screen and (orientation: landscape) {
+/**** Hero Landscape ****/
+    header.hero {
+        background-image: url('images/hero-16x9-landscape.jpg');
+    }
+
+/**** Epilogue Landscape ****/
+    section.epilogue {
+        background-image: url('images/epilogue-16x9-landscape.jpg');
+    }
 }
