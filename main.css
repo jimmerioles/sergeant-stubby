@@ -210,11 +210,11 @@ body > footer nav a:last-child {
 @media screen and (orientation: landscape) {
 /**** Hero Landscape ****/
     header.hero {
-        background-image: url('images/hero-16x9-landscape.jpg');
+        background-image: url('images/hero-16x9-640x360-mobile-landscape.jpg');
     }
 
 /**** Epilogue Landscape ****/
     section.epilogue {
-        background-image: url('images/epilogue-16x9-landscape.jpg');
+        background-image: url('images/epilogue-16x9-640x360-mobile-landscape.jpg');
     }
 }
