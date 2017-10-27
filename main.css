@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto');*/
-
 /**** Default must have ****/
 * { box-sizing: border-box; }
 
@@ -17,14 +15,13 @@ h1, h2, section.epilogue blockquote p {
 }
 
 a {
-    /*text-decoration: none;*/
     color: rgba(255, 255, 255, 0.5);
 }
 
 /**** Hero Portrait ****/
 header.hero {
     height: 100vh;
-    background-image: url('images/hero-9x16-mobile-portrait.jpg');
+    background-image: url('images/hero-360x640.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,7 +124,7 @@ section.timeline ul.events li.event div.happenings p {
 section.epilogue {
     color: #D37520;
     height: 100vh;
-    background-image: url('images/epilogue-9x16-mobile-portrait.jpg');
+    background-image: url('images/epilogue-360x640.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
