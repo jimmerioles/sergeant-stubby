@@ -21,7 +21,7 @@ a {
 /**** Hero Portrait ****/
 header.hero {
     height: 100vh;
-    background-image: url('images/hero-small.jpg');
+    background-image: url('images/hero-sm.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ section.timeline ul.events li.event div.happenings p {
 section.epilogue {
     color: #D37520;
     height: 100vh;
-    background-image: url('images/epilogue-small.jpg');
+    background-image: url('images/epilogue-sm.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -204,14 +204,24 @@ body > footer nav a:last-child {
     margin: 0 4px;
 }
 
-@media screen and (min-width: 441px) {
-/**** Hero Landscape ****/
+@media screen and (orientation: landscape) and (max-width: 667px) {
+/**** Hero ****/
     header.hero {
-        background-image: url('images/hero-large3.jpg');
+        background-image: url('images/hero-sm-l.jpg');
     }
 
-/**** Epilogue Landscape ****/
+/**** Epilogue ****/
     section.epilogue {
-        background-image: url('images/epilogue-large.jpg');
+        background-image: url('images/epilogue-sm-l.jpg');
+    }
+}
+
+@media screen and (min-width: 668px) {
+    header.hero {
+        background-image: url('images/hero-lg.jpg');
+    }
+
+    section.epilogue {
+        background-image: url('images/epilogue-lg.jpg');
     }
 }
