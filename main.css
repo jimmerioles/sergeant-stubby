@@ -204,7 +204,7 @@ body > footer nav a:last-child {
     margin: 0 4px;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 441px) {
 /**** Hero Landscape ****/
     header.hero {
         background-image: url('images/hero-16x9-640x360-mobile-landscape.jpg');
