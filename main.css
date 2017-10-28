@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    /*TODO: load only roboto*/
     font-family: 'Roboto', 'Helvetica Neue', 'Open Sans',Arial, Helvetica, sans-serif;
     min-width: 360px;
     color: rgba(255, 255, 255, 0.5);
