@@ -69,8 +69,7 @@ section.timeline {
 
 section.timeline ul.events {
     list-style: none;
-    padding: 20px 20px 20px calc(7.5vw + 30px);
-    margin: 0;
+    padding: 40px 20px 24px calc(7.5vw + 30px);
 }
 
 section.timeline ul.events:before {
@@ -84,13 +83,13 @@ section.timeline ul.events:before {
 }
 
 section.timeline ul.events li.event:not(:last-child) {
-    padding-bottom: 1px;
+    padding-bottom: 30px;
 }
 
 section.timeline ul.events li.event h2.date {
-    line-height: 1em;
+    /*line-height: 1em;*/
     position: relative;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 section.timeline ul.events li.event h2.date:before {
@@ -101,15 +100,17 @@ section.timeline ul.events li.event h2.date:before {
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left: -36px;
+    /*transform: translateY(-50%);*/
+    transform: translate(-50%, -50%);
+    left: -28px;
     background-color: #ffffff;
 }
 
 section.timeline ul.events li.event h2.significant.date:before {
     width: 18px;
     height: 18px;
-    transform: translate(-5px, -50%);
+    /*transform: translate(-5px, -50%);*/
+    /*transform: translate(-50%, -50%);*/
 }
 
 section.timeline .date {
@@ -117,7 +118,7 @@ section.timeline .date {
 }
 
 section.timeline ul.events li.event div.happenings p {
-    line-height: 1.35em;
+    line-height: 1.5em;
 }
 
 /**** Epilogue Portrait****/
@@ -205,12 +206,10 @@ body > footer nav a:last-child {
 }
 
 @media screen and (orientation: landscape) and (max-width: 667px) {
-/**** Hero ****/
     header.hero {
         background-image: url('images/hero-sm-l.jpg');
     }
 
-/**** Epilogue ****/
     section.epilogue {
         background-image: url('images/epilogue-sm-l.jpg');
     }
@@ -223,5 +222,57 @@ body > footer nav a:last-child {
 
     section.epilogue {
         background-image: url('images/epilogue-lg.jpg');
+    }
+}
+
+@media screen and (min-width: 750px) {
+    section.timeline ul.events:before {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+
+    section.timeline ul.events {
+        width: calc(100% - 60px)
+;        max-width: 900px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    section.timeline ul.events li.event {
+        width: calc(50% - 60px);
+        float: left;
+        clear: both;
+        text-align: right;
+        padding-bottom: 0 !important;
+    }
+
+    section.timeline ul.events li.event:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    section.timeline ul.events li.event:nth-child(2n) {
+        text-align: left;
+        float: right;
+    }
+
+    section.timeline ul.events li.event h2.date:before {
+        left: calc(100% + 60px);
+    }
+
+    section.timeline ul.events li.event:nth-child(2n) h2.date:before {
+        left: -60px;
+    }
+
+    section.timeline ul.events li.event h2.first.date {
+        margin-top: 40px;
+    }
+
+    section.timeline ul.events li.event div.happenings p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    section.timeline {
+        min-height: 100vh;
     }
 }
