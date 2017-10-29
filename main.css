@@ -226,6 +226,10 @@ body > footer nav a:last-child {
 }
 
 @media screen and (min-width: 750px) {
+    header.hero h1 {
+        font-size: 38px;
+    }
+
     section.timeline ul.events:before {
         left: 50%;
         transform: translateX(-50%);
@@ -233,8 +237,8 @@ body > footer nav a:last-child {
     }
 
     section.timeline ul.events {
-        width: calc(100% - 60px)
-;        max-width: 900px;
+        width: calc(100% - 60px);
+        max-width: 900px;
         padding: 20px;
         margin: auto;
     }
@@ -274,5 +278,9 @@ body > footer nav a:last-child {
 
     section.timeline {
         min-height: 100vh;
+    }
+
+    section.epilogue blockquote p {
+        font-size: 30px;
     }
 }
