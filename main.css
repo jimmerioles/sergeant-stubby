@@ -87,7 +87,6 @@ section.timeline ul.events li.event:not(:last-child) {
 }
 
 section.timeline ul.events li.event h2.date {
-    /*line-height: 1em;*/
     position: relative;
     margin: 0;
 }
@@ -100,7 +99,6 @@ section.timeline ul.events li.event h2.date:before {
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    /*transform: translateY(-50%);*/
     transform: translate(-50%, -50%);
     left: -28px;
     background-color: #ffffff;
@@ -109,8 +107,6 @@ section.timeline ul.events li.event h2.date:before {
 section.timeline ul.events li.event h2.significant.date:before {
     width: 18px;
     height: 18px;
-    /*transform: translate(-5px, -50%);*/
-    /*transform: translate(-50%, -50%);*/
 }
 
 section.timeline .date {
