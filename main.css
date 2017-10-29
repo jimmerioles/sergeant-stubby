@@ -185,7 +185,7 @@ section.epilogue footer small a {
 /**** Footer Portrait****/
 body > footer {
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px;
+    padding: 15px;
 
     display: flex;
     flex-flow: column;
@@ -197,7 +197,6 @@ body > footer nav {
 }
 
 body > footer nav a {
-    /*font-size: 20px;*/
     margin: 0 2px;
 }
 
