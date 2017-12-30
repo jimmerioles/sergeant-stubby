@@ -2,7 +2,7 @@
 A freeCodeCamp project tribute to Sergeant Stubby, hero dog of WWI.
 
 ## Built With
-* HTML5
+* [HTML5](https://www.w3.org/TR/html51/)
 * CSS3 - Flexbox, CSS Grid
 
 ## Change log
