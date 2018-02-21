@@ -1,4 +1,4 @@
-# Sergeant Stubby
+# [Sergeant Stubby](https://jimmerioles.github.io/sergeant-stubby/)
 A freeCodeCamp project tribute to Sergeant Stubby, hero dog of WWI.
 
 ## Features
