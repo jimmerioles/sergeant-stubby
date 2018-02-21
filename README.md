@@ -1,6 +1,10 @@
 # Sergeant Stubby
 A freeCodeCamp project tribute to Sergeant Stubby, hero dog of WWI.
 
+## Features
+* Mobile-first
+* Responsive
+
 ## Built With
 * HTML5 - [Latest Recomended Standard](https://www.w3.org/TR/2017/REC-html52-20171214/)
 * CSS3 - Flexbox, CSS Grid
