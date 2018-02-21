@@ -1,3 +1,5 @@
+![site-image-lg](https://user-images.githubusercontent.com/9766310/36500754-238d885e-1780-11e8-954f-d19530b7ae6f.jpg)
+
 # [Sergeant Stubby](https://jimmerioles.github.io/sergeant-stubby/)
 A freeCodeCamp project tribute to Sergeant Stubby, hero dog of WWI.
 
